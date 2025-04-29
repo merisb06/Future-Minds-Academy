@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <style>
+        *{
+            background-color: darkcyan;
+        }
+
+        body{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2 id="h22"></h2>
+    <h2 id="h2"></h2>
+
+    <script>
+
+        const h2 = document.getElementById("h2");
+
+        let name = prompt(`Write your First Name and Last Name`);
+        let age = prompt(`Write Your Age`);
+
+        h2.innerHTML = `Hello ${name}, You Are ${age}`;
+
+        let fnumber = prompt(`Write First Number:`);
+        let snumber = prompt(`Write Your Second Number`);
+
+        h2.innerHTML = `Hello ${name}, You Are ${age} <br> The sum of ${fnumber} and ${snumber} is ${parseInt(fnumber) + parseInt(snumber)} `;
+   
+   </script>
+</body>
+</html>

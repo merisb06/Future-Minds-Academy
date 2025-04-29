@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>The Highest Number Will Show Under</h1>
+    <h3 id="h3">Here:</h3>
+
+    <script>
+
+        const h3 = document.querySelector("h3");
+
+        let a = parseInt(prompt(`Give The First Number`));
+        let b = parseInt(prompt(`Give The Second Number`));
+        let c = parseInt(prompt(`Give The Third Number`));
+
+        if (a >= b && a >= b) {
+            h3.innerHTML = `The Highest Number is ${a}`;
+
+        }
+
+        else if (b >= a && b >= c) {
+            h3.innerHTML = `The Highest Number is ${b}`;
+        }
+
+        else if (c >= a && c >= b) {
+            h3.innerHTML = `The Highest Number is ${c}`;
+
+        }
+
+        else {
+            h3.innerHTML = `The Highest Number is ${c}`;
+
+        }
+
+
+    </script>
+</body>
+
+</html>
